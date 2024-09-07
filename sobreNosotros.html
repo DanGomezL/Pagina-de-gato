@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head> 
+
+<body>
+    <!-- Etiqueta semántica - Encabezado de la página -->
+    <header>
+        <h1 class="titulo_principal">¡Bienvenido al Mundo de los Gatos!</h1>
+    </header>
+
+    <!-- Etiqueta semántica - Botones iniciales (home, etc.) -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Etiqueta semántica - Contenido de la página (texto, imagen, etc.) -->
+    <section>
+        <p class="parrafo_guion">Mi gato es <strong>muy</strong> gruñón. ¿Qué hay de tu gato?</p>
+        
+        <!-- Artículo con contenido relevante -->
+        <article>
+            <!-- Elemento de imagen -->
+            <img src="./imagenes/Cat astronaut.gif" alt="Imagen de un gato astronauta" class="imagen-gato" />
+            
+            <!-- Formulario simple que enviará una petición GET -->
+            <form action="">
+                <label for="GET-name">Nombre:</label>
+                <input id="GET-name" type="text" name="name" placeholder="Escribe tu nombre"/>
+                <input type="submit" value="Guardar" />
+            </form>
+            
+            <!-- Formulario simple que enviará una petición POST -->
+            <form action="" method="post">
+                <label for="POST-name">Nombre:</label>
+                <input id="POST-name" type="text" name="name" placeholder="Escribe tu nombre"/>
+                <input type="submit" value="Guardar" />
+            </form>
+            
+            <!-- Formulario con conjunto de campos, leyenda y etiqueta -->
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Selecciona tu opción favorita</legend>
+                    <input type="radio" name="radio" id="radio1" />
+                    <label for="radio1">Opción 1</label>
+                    <input type="radio" name="radio" id="radio2" />
+                    <label for="radio2">Opción 2</label>
+                </fieldset>
+            </form>
+            
+            <!-- Mapa de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.683985027176!2d-70.68187558781814!3d-33.53560100176829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662db079683ead3%3A0x48c00b0a7907f873!2sAv.%20Goycolea%2001105%2C%207990053%20La%20Cisterna%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1725672816358!5m2!1ses-419!2scl" 
+                width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </section>
+
+    <!-- Etiqueta semántica - Publicidad, promociones -->
+    <aside>
+        <p>¡No te pierdas nuestras ofertas especiales para dueños de gatos!</p>
+    </aside>
+
+    <!-- Etiqueta semántica - Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mundo de los Gatos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="./script/script.js"></script>
+</body>
+</html>
